@@ -33,6 +33,19 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeWidget extends StatelessWidget {
+  _onPressed() {
+    print("Clicado no iem");
+  }
+
+  Widget _ListTitle() {
+    return ListTile(
+      title: Text("Item 1"),
+      leading: Icon(Icons.android),
+      subtitle: Text("Subtitulo"),
+      onTap: _onPressed,
+    );
+  }
+
   const HomeWidget({Key? key}) : super(key: key);
 
   @override
@@ -40,51 +53,62 @@ class HomeWidget extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      child: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.purple,
-              ),
+      //SingleChildScrollView
+      child: ListView(
+        children: <Widget>[
+          /* Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.purple,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.purple,
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.purple,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.purple,
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.purple,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.purple,
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.purple,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.purple,
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: 150,
+              color: Colors.purple,
             ),
-          ],
-        ),
+          ),*/
+
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+          _ListTitle(),
+        ],
       ),
     );
   }
