@@ -55,6 +55,7 @@ class HomeWidget extends StatelessWidget {
       height: double.infinity,
       //SingleChildScrollView
       child: ListView(
+        scrollDirection: Axis.vertical,
         children: <Widget>[
           /* Padding(
             padding: const EdgeInsets.all(8.0),
@@ -97,6 +98,7 @@ class HomeWidget extends StatelessWidget {
             ),
           ),*/
 
+          /*  _ListTitle(),
           _ListTitle(),
           _ListTitle(),
           _ListTitle(),
@@ -106,8 +108,27 @@ class HomeWidget extends StatelessWidget {
           _ListTitle(),
           _ListTitle(),
           _ListTitle(),
-          _ListTitle(),
-          _ListTitle(),
+          _ListTitle(),*/
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.android)),
         ],
       ),
     );
